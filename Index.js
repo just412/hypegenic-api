@@ -16,6 +16,10 @@ dotenv.config();
 mongoose.connect(process.env.DBLink)
         .then(() => console.log("DB connection Succesful"))
         .catch((err) => console.log(err));
+        
+app.get('/', (req, res) => {
+    res.send("API WORKING!!")
+})
 
 app.use(express.json());
 app.use(cors());
