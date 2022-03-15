@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "mongoose": "^6.1.4",
     "nodemon": "^2.0.15",
     "stripe": "^8.195.0"
+  },
+  "engines": {
+    "node" : "16.14.0"
   }
 }
