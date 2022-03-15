@@ -12,7 +12,7 @@ const cors = require("cors");
 
 dotenv.config();
 
-mongoose.connect("mongodb+srv://admin-test:test@cluster0.lki6o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect(process.env.DB_URL)
         .then(() => console.log("DB connection Succesful"))
         .catch((err) => console.log(err));
 
